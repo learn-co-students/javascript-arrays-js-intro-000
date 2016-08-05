@@ -1,3 +1,3 @@
-var chocolateBars = ["Snickers", "hundred grand", "kitkat", "skittles"]
+var chocolateBars = ["Snickers", "hundred grand", "kitkat", "skittles"];
 
-var addElementToBeginningOfArray = [""]
+function addElementToBeginningOfArray(array, element);
