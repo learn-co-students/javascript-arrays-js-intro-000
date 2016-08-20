@@ -24,20 +24,25 @@ function accessElementInArray(array, index) {
   return array[index];
 }
 
-// Not working.
+// Remove from the front of an Array.
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift();
   return array;
 }
 
-// Not working.
+// Remove from the front of an Array.
 function removeElementFromBeginningOfArray(array) {
-  array.slice();
+  array.shift();
   return array;
 }
 
-// Not working.
+// Remove from the end of an Array.
 function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop();
+  return array;
+}
+
+function removeElementFromEndOfArray (array) {
   array.pop();
   return array;
 }
