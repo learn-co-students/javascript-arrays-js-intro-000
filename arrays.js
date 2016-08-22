@@ -11,7 +11,7 @@ function addElementToEndOfArray(array, element){
 }
 
 //doesn't pass array-test.js
-function destructivelyAddElementToBeginningOfArray(array, element){
+function destructivelyAddElementToBeginningOfArrayNoPass(array, element){
   //console.log(array);
   array = [`${element}`, ...array];
   //console.log(array);
@@ -19,7 +19,20 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 
 }
 
-/*
+/* log Error
+arrays destructivelyAddElementToBeginningOfArray(array, element) alters `array`:
+
+      AssertionError: expected [ 1 ] to deeply equal [ 'foo', 1 ]
+      + expected - actual
+
+       [
+      +  "foo"
+         1
+       ]
+
+      at Context.it (test/arrays-test.js:43:24)
+*/
+
 //passes arrays-test.js
 function destructivelyAddElementToBeginningOfArray(array, element){
   //console.log(array);
@@ -28,7 +41,7 @@ function destructivelyAddElementToBeginningOfArray(array, element){
   return(array)
 
 }
-*/
+
 function destructivelyAddElementToEndOfArray(array, element){
   array.push(`${element}`)
   return(array)
