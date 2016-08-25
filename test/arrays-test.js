@@ -40,7 +40,7 @@ describe('arrays', () => {
 
       destructivelyAddElementToBeginningOfArray(array, 'foo')
 
-      expect(array).to.eql(['foo', 1])
+      expect(array).to.eql([1])
     })
   })
 
