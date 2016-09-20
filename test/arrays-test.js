@@ -89,4 +89,18 @@ describe('arrays', () => {
       expect(removeElementFromEndOfArray([1, 2, 3])).to.eql([1, 2])
     })
   })
+  describe('nondestructivelyRemoveElementFromEndOfArray(array)', () => {
+    it('removes an `element` from the end of an `array`', () => {
+      expect(nondestructivelyRemoveElementFromEndOfArray([1, 2])).to.eql([1])
+    })
+
+    it('does not alter `array`', () => {
+      const array = [1, 2]
+
+      nondestructivelyRemoveElementFromEndOfArray(array)
+
+      expect(array).to.eql(array)
+    })
+  })
+
 })
