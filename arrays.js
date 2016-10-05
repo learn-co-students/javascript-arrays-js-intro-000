@@ -28,7 +28,11 @@ function removeElementFromBeginningOfArray(arr){
   var newArr = arr.splice(1);
   return newArr;
 }
-function removeElementFromEndOfArray(arr){
+function destructivelyRemoveElementFromEndOfArray(arr){
   arr.pop();
   return arr;
+}
+function removeElementFromEndOfArray(arr){
+  var newArr = arr.splice(0, arr.length -1)
+  return newArr;
 }
