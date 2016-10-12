@@ -22,7 +22,7 @@ function destructivelyAddElementToEndOfArray(array, element) {
 }
 
 function accessElementInArray(array, index) {
-  var testarray[index] = array;
+  var testarray = array;
   return testarray[index];
 }
 
@@ -35,4 +35,15 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 function removeElementFromBeginningOfArray(array) {
   var testarray = array;
   return testarray.slice(1);
+}
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  var testarray = array;
+  testarray.pop()
+  return testarray
+}
+
+function removeElementFromEndOfArray(array) {
+  var testarray = array;
+  return testarray.slice(0, testarray.length - 1)
 }
