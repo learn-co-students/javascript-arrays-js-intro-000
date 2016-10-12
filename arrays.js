@@ -43,11 +43,12 @@ function removeElementFromBeginningOfArray(array) {
   return array.slice(1)
 }
 
-function removeElementFromEndOfArray(array) {
-  return array.splice(0,array.length -1)
-}
 
 function destructivelyRemoveElementFromEndOfArray(array) {
   array.pop(array)
   return array
+}
+
+function removeElementFromEndOfArray(array) {
+  return array.splice(0,array.length - 1)
 }
