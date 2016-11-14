@@ -55,6 +55,7 @@ function removeElementFromBeginningOfArray(argArray) {
     return newArray;
 }
 
+
 function destructivelyRemoveElementFromEndOfArray(argArray) {
     argArray.pop();
 
