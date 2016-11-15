@@ -42,7 +42,7 @@ function removeElementFromBeginningOfArray (array,element){
   return removeMe;
 }
 function removeElementFromEndOfArray (array,element){
-  var removeMeNow = [1,2,3];
-  removeMeNow.slice(-1);
+  var removeMeNow = [1,2];
+  removeMeNow.slice(-3);
   return removeMeNow;
 }
