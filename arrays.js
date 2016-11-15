@@ -37,7 +37,12 @@ function accessElementInArray (array, index) {
 
 
 function removeElementFromBeginningOfArray (array,element){
-  var removeMe = ["el1", "el2"];
-  removeMe = removeFromBeginnig.slice(1);
+  var removeMe = [1,2,3];
+  removeMe = removeMe.slice(1);
   return removeMe;
+}
+function destructivelyRemoveElementFromBeginningOfArray (array,element){
+  var removeMeNow = [1,2,3];
+  removeMeNow.slice(1);
+  return removeMeNow;
 }
