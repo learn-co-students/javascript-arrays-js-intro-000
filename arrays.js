@@ -3,28 +3,25 @@ var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
 
 function addElementToBeginningOfArray (array, element) {
-  const someArray = [];
-  const myOtherArray = ["foo", 1, ...someArray];
-  // should return new array and not modify original
+  const myOtherArray = [element, ...array];
+
   return myOtherArray;
 }
 
 function destructivelyAddElementToBeginningOfArray (array, element) {
-  array = [];
   array.unshift(element);
   return array;
 }
 
 function addElementToEndOfArray (array,element) {
-  const addElementEnd = [];
-  const addElementNew = [...addElementEnd, 1, "foo"];
-  return addElementNew;
+  const newArray = [...array, element];
+  return Array;
 }
 
 function destructivelyAddElementToEndOfArray (array,element) {
-  var someOtherArray = [];
-  someOtherArray.push(1, "foo");
-  return someOtherArray;
+
+  array.push(element);
+  return array;
 }
 
 
