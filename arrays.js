@@ -1,29 +1,45 @@
-
-var chocolateBars = ["snickers", "hundred grand", "kitkat","skittles"];
- // test result:  passed
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
 function addElementToBeginningOfArray(array, element){
-/*  1- functions take two parameters(array and an element)
-    2- add the element to the beginning of the array and then returns the whole array.
-    3- should return a new array and not modify the original. */
-  var newarray= array
-  newarray.unshift(element)
-  return newarray;
-}
-// test passed
-
-function destructivelyAddElementToBeginningOfArray(array, element){
-   /* 1- functions take two parameters,(array and an element)
-    2- add to the beginning of the array and returns the whole array
-    3- modifying the original array passed in */
-  return array.unshift(element);
+  var array = [element, ...array];
+  return array;
 }
 
-//test failed
+function destructivelyAddElementToBeginningOfArray(array,element){
+  array.unshift(element);
+  return array;
+}
 
+function addElementToEndOfArray(array, element){
+  var array = [...array, element];
+  return array;
+}
 
- /*
- error : arrays destructivelyAddElementToBeginningOfArray(array,element) adds an
- 'element' to the beginning of an 'array':
- AssertionError: expected 2 to deeply equal ['foo' ,1]
- */
+function destructivelyAddElementToEndOfArray(array, element){
+  array.push(element);
+  return array;
+}
+
+function accessElementInArray(array, index){
+  return array[index];
+}
+
+function destuctivelyRemoveElementFromBeginningOfArray(array){
+  array.shift();
+  return array;
+}
+
+function removeElementFromBeginningOfArray(array){
+  array.shift();
+  return array;
+}
+
+function destructivelyRemoveElementFromEndOfArray(array){
+  array.pop();
+  return array;
+}
+
+function removeElementFromEndOfArray(array){
+  array.pop();
+  return array;
+}
