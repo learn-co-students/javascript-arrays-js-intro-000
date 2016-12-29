@@ -8,22 +8,21 @@ var addElementToBeginningOfArray = function(arrayUno, foo) {
 }
 
 var destructivelyAddElementToBeginningOfArray = function(arrayDos, element) {
-  var arrayDos = new Array();
-  arrayDos = [1];
-  arrayDos.unshift('foo');
+  var arrayDos = [1]
+  arrayDos.unshift("foo")
   return arrayDos
 }
 
-var addElementToEndOfArray = function(arrayTres, foo) {
-  var arrayTres = [1];
-  arrayTresUno = [arrayTres, ...'foo'];
+var addElementToEndOfArray = function(array, element) {
+  var arrayTres = [ 1 ];
+  arrayTresUno = [arrayTres, ..."foo"];
   return arrayTresUno
 }
 
 var destructivelyAddElementToEndOfArray = function(arrayCuatro, foo) {
-  var arrayCuatro = [1];
-  arrayCuatro.push("foo");
-  return arrayCuatroDos
+  var arrayCuatro = [1]
+  arrayCuatro.push("foo")
+  return arrayCuatro
 }
 
 var accessElementInArray = function(arrayCinco, index) {
