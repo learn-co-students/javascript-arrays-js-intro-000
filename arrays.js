@@ -22,8 +22,8 @@ var addElementToEndOfArray = function(arrayTres, foo) {
 
 var destructivelyAddElementToEndOfArray = function(arrayCuatro, foo) {
   var arrayCuatro = [1];
-  arrayCuatro.push('foo');
-  return arrayCuatro
+  arrayCuatro.push("foo");
+  return arrayCuatroDos
 }
 
 var accessElementInArray = function(arrayCinco, index) {
@@ -35,7 +35,7 @@ var removeElementFromBeginningOfArray = function(arraySes) {
   var arraySes = new Array();
   arraySes = [1, 2, 3];
   arraySes.shift();
-  return arraySesUno
+  return arraySes
 }
 
 var removeElementFromEndOfArray = function(arraySiete) {
