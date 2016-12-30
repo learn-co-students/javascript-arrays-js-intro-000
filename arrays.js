@@ -7,9 +7,8 @@ var addElementToBeginningOfArray = function(arrayUno, foo) {
   return arrayUno
 }
 
-function destructivelyAddElementToBeginningOfArray(arrayDos, element) {
-  var arrayDos = [1];
-  arrayDos.unshift("foo", ...arrayDos);
+function destructivelyAddElementToBeginningOfArray(arrayDos, foo) {
+  arrayDos.unshift("foo");
   return arrayDos
 }
 
@@ -19,9 +18,8 @@ var addElementToEndOfArray = function(arrayTres, foo) {
   return arrayTres
 }
 
-function destructivelyAddElementToEndOfArray(arrayCuatro, element) {
-  var arrayCuatro = [1];
-  arrayCuatro.push(...arrayCuatro, "foo");
+function destructivelyAddElementToEndOfArray(arrayCuatro, foo) {
+  arrayCuatro.push("foo");
   return arrayCuatro
 }
 
