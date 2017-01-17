@@ -26,12 +26,22 @@ function accessElementInArray(array, index) {
   return array[index];
 }
 
-function destructivelyRemoveElementFromEndOfArray(array) {
+function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift();
   return array;
+}
+
+function removeElementFromEndOfArray(array) {
+  var arr = array.slice(0, array.length - 1);
+  return arr;
 }
 
 function removeElementFromBeginningOfArray(array) {
   var arr = array.slice(1);
   return arr;
+}
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop();
+  return array;
 }
