@@ -17,3 +17,12 @@ function accessElementInArray(a, i){
 function destructivelyRemoveElementFromBeginningOfArray(a){
   return a.shift()
 }
+function removeElementFromBeginningOfArray(array, element){
+  return array.slice(1)
+}
+function destructivelyRemoveElementFromEndOfArray(array){
+  return array.pop()
+}
+function removeElementFromEndOfArray(array){
+  return array.slice(0, array.lenght - 1)
+}
