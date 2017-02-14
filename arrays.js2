@@ -1,11 +1,13 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
 function addElementToBeginningOfArray(x,y){
+var x= [1];
 var z= [y, ...x];
 return z;
 }
 
 function destructivelyAddElementToBeginningOfArray(x,y){
+//var x= [1];
  x.unshift(y);
 return x;
 }
@@ -17,30 +19,36 @@ function addElementToEndOfArray(x,y){
 }
 
 function destructivelyAddElementToEndOfArray(x,y){
+//var x= [1];
   x.push(y);
 return x;
 }
 
 function accessElementInArray(x,y){
+var x= [1,2,3];
 return x[y];
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(x,y){
-    x.shift(y);
+  //var x= [1,2,3];
+  x.shift(y);
   return x;
 }
 
 function removeElementFromBeginningOfArray(x,y){
+  //var x=[1,2,3];
   var z = x.slice(1);
   return z;
 }
 
 function destructivelyRemoveElementFromEndOfArray(x){
+  //var x= [1,2,3];
   x.pop(y);
   return x;
 }
 
 function removeElementFromEndOfArray(x){
-  var z =  x.slice(0, x.length-1);
+  //var x= [1,2,3];
+var z =  x.slice(0, x.length-1);
   return z;
 }
