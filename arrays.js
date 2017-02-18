@@ -13,7 +13,7 @@ function addElementToBeginningOfArray (array, element)
   }
 function addElementToEndOfArray (array, element)
 {
-  vary array = "foo"
+  var array = "foo"
   var element = 1
   return [array, element]
 }
