@@ -6,8 +6,7 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+  "scripts": { "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json --timeout 5000"
   },
   "repository": {
     "type": "git",
