@@ -33,10 +33,12 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 - addElementToEndOfArray should not alter the original array;
 */
 
+
 function addElementToEndOfArray(array, element) {
-  var newArray = array.push(element);
+  var newArray = [...array, element];
   return newArray
 }
+
 
 /*
 - Define function, destructivelyAddElementToEndOfArray.
@@ -45,7 +47,7 @@ function addElementToEndOfArray(array, element) {
 */
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  array.push('foo');
+  array.push(element);
   return array
 }
 
@@ -55,7 +57,7 @@ function destructivelyAddElementToEndOfArray(array, element) {
 */
 
 function accessElementInArray(array, index) {
-  return array[3];
+  return array[index];
 }
 
 /*
