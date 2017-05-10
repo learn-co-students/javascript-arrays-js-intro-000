@@ -24,12 +24,12 @@ function addElementToBeginningOfArray(array, element){
 
 function addElementToEndOfArray(array, element){
    array.push(element);
-   return array 
+   return array
 }
 
-function destructivelyAddElementToBeginningOfArray(array){
-  array.unshift(element);
-  return array
+function destructivelyAddElementToBeginningOfArray(array, element){
+    array.unshift(element);
+    return array
 }
 
 function accessElementInArray(array, index){
