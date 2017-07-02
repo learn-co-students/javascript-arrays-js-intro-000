@@ -1,26 +1,26 @@
-var chocolateBars=[snickers, hundred grand,kitkat,skittles];
+var chocolateBars=["snickers", "hundred grand","kitkat","skittles"];
 var a=[1,2,3];
 var b=4;
 function addElementToBeginningOfArray(a,b)
 {
-  a=[b,...a];
-  return a;
+  var c=[b,...a];
+  return c;
 }
 
 function destructivelyAddElementToBeginningOfArray(a,b)
 {
-  a=[b,...a];
+  a.unshift(b);
   return a;
 }
 
 function addElementToEndOfArray(a,b)
 {
-  a.push(b);
-  return b;
+  var c=[a,...b];
+  return c;
 }
 
 function destructivelyAddElementToEndOfArray(a,b)
 {
-  a=[1,2,3,4];
+  a.push(b)
   return a;
 }
