@@ -1,17 +1,25 @@
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 
-function addElementToBeginningOfArray() {
-  var originalArray = [1];
-  var newArray = ['foo', ...originalArray];
-  return newArray;
-}
-function destructivelyAddElementToBeginningOfArray(array, element) {
-  array.unshift(element);
-  return array;
+//goal is to not modify the original array itself, so put everything in the return statemetn
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array];
 }
 
 function addElementToEndOfArray(array, element) {
-  array = [...array, element];
+  return [...array, element];
+}
+
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1);
+}
+
+function removeElementFromEndOfArray(array) {
+  return array.slice(0, array.length - 1)
+}
+
+//goal is to modify the underlying array, so modify array in one line and return it to return it modified
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element);
   return array;
 }
 
@@ -20,17 +28,9 @@ function destructivelyAddElementToEndOfArray(array, element) {
   return array
 }
 
-function accessElementInArray(array, n) {
-  return array[n];
-}
-
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift();
   return array;
-}
-
-function removeElementFromBeginningOfArray(array) {
-  return array.slice(1);
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
@@ -38,6 +38,6 @@ function destructivelyRemoveElementFromEndOfArray(array) {
   return array;
 }
 
-function removeElementFromEndOfArray(array) {
-  return array.slice(0, array.length - 1)
+function accessElementInArray(array, n) {
+  return array[n];
 }
