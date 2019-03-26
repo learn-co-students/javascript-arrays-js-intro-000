@@ -5,8 +5,8 @@ function addElementToBeginningOfArray(chocolateBars, element ){
   //should return a new array and not modify the original
   //var chocolateBars = [element, chocolateBars[0]]
   //return chocolateBars;
-  //return [ element, ...chocolateBars];
-  return [ element, ...array];
+  return [ element, ...chocolateBars];
+  //return [ element, ...array];
 }
 
 function destructivelyAddElementToBeginningOfArray(chocolateBars, element){
