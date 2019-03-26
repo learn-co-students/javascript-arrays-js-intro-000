@@ -39,8 +39,8 @@ function destructivelyRemoveElementFromBeginningOfArray(array){
 }
 function removeElementFromBeginningOfArray(array){
   //return the entire array in the same line, and it should not mutate the original array.
-  array.slice(1);
-  return array;
+  return array.slice(1);
+  
 }
 function destructivelyRemoveElementFromEndOfArray(array){
   // Your function should return the entire array, and it should mutate the array
