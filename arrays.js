@@ -1,15 +1,45 @@
 var chocolateBars = ["snickers","hundred grand","kitkat","skittles"];
 
 
-function addElementToBeginningOfArray (fruits){
-  moreFruits = ...fruits;
-  return fruits;
+function addElementToBeginningOfArray (fruits, moreFruits){
+   return [moreFruits,...fruits];
 }
-addElementToBeginningOfArray();
+
 
 function destructivelyAddElementToBeginningOfArray(shapes, moreShapes){
-  var shapes = ["square","triangle","circle"];
-  var moreShapes = shapes.unshift("oval");
-
+  shapes.unshift(moreShapes);
   return shapes;
+
+}
+
+
+function addElementToEndOfArray(dogs,moreDogs){
+  return [...dogs, moreDogs];
+}
+
+
+function destructivelyAddElementToEndOfArray(dogs,moreDogs){
+  dogs.push(moreDogs);
+  return dogs;
+}
+
+
+function accessElementInArray(array,index){
+  return array[index];
+}
+
+
+function destructivelyRemoveElementFromBeginningOfArray(cats){
+  cats.shift();
+  return cats;
+}
+
+
+function removeElementFromBeginningOfArray(array){
+  return array.slice(1);
+}
+
+function destructivelyRemoveElementFromEndOfArray(array){
+  array.pop();
+  return array;
 }
