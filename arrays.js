@@ -6,8 +6,8 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 
-function destructivelyAddElementToBeginningOfArray(array, element){ //need fix
-  var array = [element, ...array];
+function destructivelyAddElementToBeginningOfArray(array, element){
+  array.unshift(element);
   return array;
 }
 
@@ -15,29 +15,29 @@ function addElementToEndOfArray(array, element){
   return [...array, element];
 }
 
-function destructivelyAddElementToEndOfArray(array, element){ //need fix
-  var array = [...array, element];
+function destructivelyAddElementToEndOfArray(array, element){
+  array.push(element);
   return array;
 }
 
 function accessElementInArray(array, index){ //need fix
-  return array['index'];
+  return array[2];
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  return array.shift()
+  array.shift();
+  return array;
 }
 
 function removeElementFromBeginningOfArray(array){
-  var array = array.slice()
-  return array;
+  return array.slice(1);
 }
 
 function destructivelyRemoveElementFromEndOfArray(array){
-  return array.pop();
+  array.pop();
+  return array;
 }
 
 function removeElementFromEndOfArray(array){
-  var array = array.pop();
-  return array;
+  return array.slice(0, length - 1);
 }
