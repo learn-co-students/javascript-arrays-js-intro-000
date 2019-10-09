@@ -1,15 +1,23 @@
-var chocolateBars = ['snickers','hundred grand','kitkat','skittles'];
+var chocolateBars = ['snickers','hundred grand','kitkat','skittles'];  //Creating an array
 
-var smartphones = ["iPhone X", "SamsungGalaxy S4"];
-var newElement = "Nokia Jailbreak";
-function addElementToBeginningOfArray(smartphones,newElement) {
-  newArray = [newArray, ...smartphones];
+var gameConsoles = ["X Box","Nintendo","PC"];
+var newElement = "Atari";
+/* Adding an element at the beginning without changing the array */
+function addElementToBeginningOfArray(gameConsoles,newElement) {
+  let newArray = [newElement, ...gameConsoles];
   return newArray;
 }
 
- var gameConsoles = ["X Box","Nintendo","PC"];
- var destructiveElement = "Sega Genesis";
- function destructivelyAddElementToBeginningOfArray (gameConsoles, destructivelyAddElementToBeginningOfArray) {
-   gameConsoles.unshift(destructiveElement);
-   return gameConsoles;
- }
+var destructiveBeginningElement = "Sega Genesis";
+/* Adding an element at the beginning Destructively */
+function destructivelyAddElementToBeginningOfArray (gameConsoles, destructiveBeginningElement) {
+  gameConsoles.unshift(destructiveBeginningElement);
+  return gameConsoles;
+}
+
+var endingElement = "NTD 360";
+/* Adding an element at the ending without changing the array */
+function addElementToEndOfArray(gameConsoles,endingElement) {
+  let endingArray = [...gameConsoles, endingElement];
+  return endingArray;
+}
