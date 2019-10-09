@@ -21,3 +21,9 @@ function addElementToEndOfArray(gameConsoles,endingElement) {
   let endingArray = [...gameConsoles, endingElement];
   return endingArray;
 }
+var destructiveEndingElement = "NTD 370";
+/* Adding an element at the ending Destructively */
+function destructivelyAddElementToEndOfArray (gameConsoles, destructiveEndingElement) {
+  gameConsoles.push(destructiveEndingElement);
+  return gameConsoles;
+}
