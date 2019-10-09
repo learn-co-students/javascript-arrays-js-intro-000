@@ -40,7 +40,7 @@ function destructivelyRemoveElementFromBeginningOfArray(gameConsoles) {
   return gameConsoles;
 }
 
-/* Adding an element at the ending without changing the array */
+/* Removing an element from the beginning without changing the array */
 function removeElementFromBeginningOfArray (gameConsoles) {
   let cutArray = gameConsoles.slice(1);
   return cutArray;
@@ -52,7 +52,8 @@ function destructivelyRemoveElementFromEndOfArray (gameConsoles) {
   return gameConsoles;
 }
 
-/* Removing an element from the ending without changing array 
+/* Removing an element from the ending without changing array */
 function removeElementFromEndOfArray (gameConsoles) {
-    
-} */
+  let cutTailArray = gameConsoles.slice(0, gameConsoles.length - 1);
+  return cutTailArray;
+}
