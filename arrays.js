@@ -23,7 +23,7 @@ function addElementToEndOfArray(array, element){
 
 function destructivelyAddElementToEndOfArray(array, element){
   array.push(element);
-  // array [...array , element]; <--- this doesn't work?
+  // array = [...array , element]; <--- this doesn't work?
   return array;
 }
 
