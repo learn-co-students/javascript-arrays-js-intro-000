@@ -1,16 +1,17 @@
-function chocolateBars () {
+function chocolateBars() {
   var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles'];
 }
-
 function addElementToBeginningOfArray(array, element) {
-  return [element, ...array];
+  array = [element, ...array];
+  return array;
 }
 function destructivelyAddElementToBeginningOfArray(array, element) {
   array.unshift(element);
   return array;
 }
 function addElementToEndOfArray(array, element) {
-  return [...array, element];
+  array = [...array, element];
+  return array;
 }
 function destructivelyAddElementToEndOfArray(array, element) {
   array.push(element);
@@ -19,8 +20,8 @@ function destructivelyAddElementToEndOfArray(array, element) {
 function accessElementInArray(array, index) {
   return array[index];
 }
-function destructivelyRemoveElementFromBeginningOfArray(array, element) {
-  array.shift(element);
+function  destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift();
   return array;
 }
 function removeElementFromBeginningOfArray(array) {
