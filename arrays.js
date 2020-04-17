@@ -1,9 +1,37 @@
+var ingredient1 = 'bread';
+var ingredient2 = 'mild cheese';
+var ingredient3 = 'sharp cheese';
+var ingredient4 = 'butter';
+var ingredient5 = 'tomato';
+var ingredient6 = 'garlic';
+
+var grilledCheeseIngredients = [
+  'bread',
+  'mild cheese',
+  'sharp cheese',
+  'butter',
+  'tomato',
+  'garlic'
+]
+
+var tomatoSauceIngredients = [
+  'tomato',
+  'garlic',
+  'olive oil',
+  'basil',
+  'oregano'
+]
+
 var chocolateBars = [
   'snickers',
   'hundred grand',
   'kitkat',
   'skittles'
 ];
+Object.keys([1, 2, 3]);
+var items = [1, 2, 3, 4, 5];
+var newItems = [...items.slice(0,2), ...items.slice(3)];
+console.log(newItems);
 function removeElementFromEndOfArray(arr) {
   return arr.slice(0, arr.length - 1);
 }
@@ -11,7 +39,8 @@ function destructivelyRemoveElementFromEndOfArray(arr) {
   return arr.pop();
 }
 function removeElementFromBeginningOfArray(arr) {
-  return arr.slice(1);
+  var newArray = arr.slice(1);
+  return newArray;
 }
 function destructivelyRemoveElementFromBeginningOfArray(arr) {
   var shiArr = arr.shift();
@@ -21,16 +50,20 @@ function accessElementInArray(arr, ind) {
   return arr[ind];
 }
 function addElementToBeginningOfArray(arr, ele) {
-  return [arr, ...ele];
+  var newArray = [arr, ...ele];
+  return newArray;
   //return arr.unshift(ele);
 }
 function destructivelyAddElementToBeginningOfArray(arr, ele) {
-  return arr.unshift(ele);
+  var newArray = arr.unshift(ele);
+  return newArray;
   //return [arr, ...ele];
 }
 function addElementToEndOfArray(arr, ele) {
-  return [...ele, arr];
+  var newArray = [...ele, arr];
+  return newArray;
 }
 function destructivelyAddElementToEndOfArray(arr, ele) {
-  return arr.push(ele);
+  var newArray = arr.push(ele);
+  return newArray;
 }
